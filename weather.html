@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="./styles/weather.css">
+</head>
+<body>
+    <header>
+        <div class="app-header">
+            <h1 class="app-header_principal">Centro Meteorológico</h1>
+            <p class="app-header_text">Información climática actualizada y pronósticos extendidos</p>
+        </div>
+    </header>
+    <main>
+        <div class="current-weather">
+            <div class="location-selector">
+                <h1>Medellín, Colombia</h1>
+            </div>
+            
+            <div class="weather-icon">☀️</div>
+            <div class="temp-display">28°C</div>
+            <div class="weather-condition">Parcialmente Nublado</div>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div class="detail-label">Sensación Térmica</div>
+                    <div class="detail-value">31°C</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Humedad</div>
+                    <div class="detail-value">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Viento</div>
+                    <div class="detail-value">12 km/h</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Presión</div>
+                    <div class="detail-value">1013 hPa</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Visibilidad</div>
+                    <div class="detail-value">10 km</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Índice UV</div>
+                    <div class="detail-value">7 Alto</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weather-alerts">
+            <div class="alert-title">🚨 Alerta Meteorológica</div>
+            <p>Se esperan lluvias intensas para esta tarde. Se recomienda tomar precauciones al salir y evitar zonas propensas a inundaciones.</p>
+        </div>
+        
+        <div class="forecast-section">
+            <h2 class="forecast-title">Pronóstico de 7 Días</h2>
+            <div class="forecast-grid">
+                <div class="forecast-card">
+                    <div class="forecast-day">Hoy</div>
+                    <div class="forecast-icon">⛅</div>
+                    <div class="forecast-condition">Parcialmente Nublado</div>
+                    <div class="forecast-temps">
+                        <span class="forecast-high">28°</span>
+                        <span class="forecast-low">18°</span>
+                    </div>
+                </div>
+                
+                <div class="forecast-card">
+                    <div class="forecast-day">Mañana</div>
+                    <div class="forecast-icon">🌧️</div>
+                    <div class="forecast-condition">Lluvia Ligera</div>
+                    <div class="forecast-temps">
+                        <span class="forecast-high">25°</span>
+                        <span class="forecast-low">16°</span>
+                    </div>
+                </div>
+                
+                <div class="forecast-card">
+                    <div class="forecast-day">Miércoles</div>
+                    <div class="forecast-icon">⛈️</div>
+                    <div class="forecast-condition">Tormenta</div>
+                    <div class="forecast-temps">
+                        <span class="forecast-high">23°</span>
+                        <span class="forecast-low">15°</span>
+                    </div>
+                </div>
+                
+                <div class="forecast-card">
+                    <div class="forecast-day">Jueves</div>
+                    <div class="forecast-icon">☀️</div>
+                    <div class="forecast-condition">Soleado</div>
+                    <div class="forecast-temps">
+                        <span class="forecast-high">30°</span>
+                        <span class="forecast-low">19°</span>
+                    </div>
+                </div>
+                
+                <div class="forecast-card">
+                    <div class="forecast-day">Viernes</div>
+                    <div class="forecast-icon">⛅</div>
+                    <div class="forecast-condition">Nublado</div>
+                    <div class="forecast-temps">
+                        <span class="forecast-high">27°</span>
+                        <span class="forecast-low">17°</span>
+                    </div>
+                </div>
+                
+                <div class="forecast-card">
+                    <div class="forecast-day">Sábado</div>
+                    <div class="forecast-icon">🌦️</div>
+                    <div class="forecast-condition">Chubascos</div>
+                    <div class="forecast-temps">
+                        <span class="forecast-high">26°</span>
+                        <span class="forecast-low">16°</span>
+                    </div>
+                </div>
+                
+                <div class="forecast-card">
+                    <div class="forecast-day">Domingo</div>
+                    <div class="forecast-icon">☀️</div>
+                    <div class="forecast-condition">Despejado</div>
+                    <div class="forecast-temps">
+                        <span class="forecast-high">29°</span>
+                        <span class="forecast-low">18°</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weather-map">
+            <h3>Mapa del Tiempo</h3>
+            <p>🗺️ Aquí se mostraría un mapa interactivo con las condiciones meteorológicas actuales de la región.</p>
+            <div style="margin-top: 20px; padding: 40px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                <p>Vista satelital de Colombia</p>
+                <p>🌤️ ☁️ 🌧️ ⛈️ ☀️</p>
+                <p>Leyenda: Soleado | Nublado | Lluvia | Tormentas | Despejado</p>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
