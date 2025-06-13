@@ -177,13 +177,3 @@ label {
     text-align: right;
 }
 
-.empty-state {
-  text-align: center;
-  padding: 60px 20px;
-  color: #7f8c8d;
-}
-
-.empty-state h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
