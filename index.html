@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniOS</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="desktop">
+        <header class="taskbar">
+            <div class="system-logo">
+                <h1 class="system-logo_principal">MiniOS</h1>
+            </div>
+            <div class="system-time">
+                <span>Club Penguin OS</span>
+            </div>
+        </header>
+        <input type="radio" id="home" name="app" value="home" checked hidden>
+        <input type="radio" id="notes" name="app" value="notes" hidden>
+        <input type="radio" id="tasks" name="app" value="tasks" hidden>
+        <input type="radio" id="weather" name="app" value="weather" hidden>
+        <nav class="app-launcher">
+            <h2 class="app-launcher_principal">Aplicaciones Disponibles</h2>
+            <div class="app-selector">
+                <label for="home" class="app-button">Inicio</label>
+                <label for="notes" class="app-button">Notas</label>
+                <label for="tasks" class="app-button">Tareas</label>
+                <label for="weather" class="app-button">Clima</label>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div class="welcome-screen" id="home-content">
+                <h2 class="welcome-screen_principal">Bienvenido a Club Penguin</h2>
+                <p class="welcome-screen_secondary">Selecciona una aplicación para comenzar.</p>
+                <div class="welcome-screen_system">
+                    <h3 class="welcome-screen_system-principal">Información del Sistema</h3>
+                    <ul class="welcome-screen_system-ul">
+                        <li class="welcome-screen_system-li">Versión: MiniOS 1.0</li>
+                        <li class="welcome-screen_system-li">Tecnología: HTML + CSS</li>
+                        <li class="welcome-screen_system-li">Aplicaciones instaladas: 3</li>
+                        <li class="welcome-screen_system-li">Estado: Funcionando correctamente</li>
+                    </ul>
+                </div>
+            </div>
+            <iframe src="apps/notes.html" class="app-frame" id="notes-frame"></iframe>
+            <iframe src="apps/homeworks.html" class="app-frame" id="tasks-frame"></iframe>
+            <iframe src="apps/weather.html" class="app-frame" id="weather-frame"></iframe>
+        </main>
+    </div>
+</body>
+</html>
