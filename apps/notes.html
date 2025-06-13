@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas - MiniOS</title>
+    <link rel="stylesheet" href="../styles/notes.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-content__title">Aplicación de Notas</h1>
+            <p class="header-content__text">Organiza tus ideas y pensamientos importantes</p>
+        </div>
+    </header>
+
+    <main class="notes">
+        <div class="notes-form">
+            <h2 class="notes-form__title">Crear Nueva Nota</h2>
+            <form class="form">
+                <div class="form-group">
+                    <label>Título de la Nota:</label>
+                    <input class="form-group__text" type="text" placeholder="Escribe el título de tu nota">
+                </div>
+
+                <div class="form-group">
+                    <label >Categoría:</label>
+                    <select class="form-group__select">
+                        <option value="personal">Personal</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="estudio">Estudio</option>
+                        <option value="ideas">Ideas</option>
+                        <option value="proyectos">Proyectos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Prioridad:</label>
+                    <div class="form-grup__options">
+                        <div class="priority-option">
+                            <input type="radio" id="priority-high" name="priority" >
+                            <label for="priority-high">Alta</label>
+                        </div>
+                        <div class="priority-option">
+                            <input type="radio" id="priority-medium" name="priority" >
+                            <label for="priority-medium">Media</label>
+                        </div>
+                        <div class="priority-option">
+                            <input type="radio" id="priority-low" name="priority" >
+                            <label for="priority-low">Baja</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Contenido:</label>
+                    <textarea class="form-group__tarea" placeholder="Escribe el contenido de tu nota aquí..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="notes-list">
+            <div class="card high-priority">
+                <div class="card-note">
+                    <h3 class="card-note__title">Sustentacion Prueba RIWI</h3>
+                    <span class="note-priority priority-high">Alta</span>
+                </div>
+                <div class="card-category">Categoría: Estudio</div>
+                <div class="card-content">
+                    No olvidar preparar la sustentacion para mañana con los TL.
+                    Repasar cada linea de HTML Y CSS para dar mas claridad al momento de sustentar.
+                </div>
+                <div class="card-footer">
+                    Creada: Hoy 09:30 AM
+                </div>
+            </div>
+
+            <div class="card medium-priority">
+                <div class="card-note">
+                    <h3 class="card-note__title">Lista de compras</h3>
+                    <span class="note-priority priority-medium">Media</span>
+                </div>
+                <div class="card-category">Categoría: Personal</div>
+                <div class="card-content">
+                    Comprar: leche, pan, frutas, verduras para la cena del fin de semana. También revisar ofertas en
+                    el supermercado.
+                </div>
+                <div class="card-footer">
+                    Creada: Ayer 06:15 PM
+                </div>
+            </div>
+
+            <div class="card low-priority">
+                <div class="card-note">
+                    <h3 class="card-note__title">Ideas para proyecto</h3>
+                    <span class="note-priority priority-low">Baja</span>
+                </div>
+                <div class="card-category">Categoría: Ideas</div>
+                <div class="card-content">
+                    Explorar la posibilidad de crear una aplicación móvil que ayude a las personas a organizar mejor
+                    su tiempo y tareas diarias.
+                </div>
+                <div class="card-footer">
+                    Creada: 2 días atrás
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
