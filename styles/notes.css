@@ -177,3 +177,14 @@ label {
     text-align: right;
 }
 
+footer {
+    background-color: #58a9fa;
+    width: 100%;
+    padding: 1em 0;
+    bottom: 0;
+    margin-top: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
