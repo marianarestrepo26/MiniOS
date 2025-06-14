@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas - MiniOS</title>
+    <link rel="stylesheet" href="../styles/homeworks.css">
+</head>
+<body>
+    <div class="app-header">
+        <h1 class="title-app-header">Gestor de Tareas</h1>
+        <p class="paragraph-app-header">Organiza y controla el progreso de tus actividades</p>
+    </div>
+    
+    <div class="tasks-container">
+        <div class="stats-section">
+            <h2>Estadísticas de Tareas</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Total de Tareas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Completadas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">En Progreso</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Vencidas</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="task-form">
+            <h2>Crear Nueva Tarea</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="task-title">Título de la Tarea:</label>
+                        <input type="text" id="task-title" name="title" placeholder="Nombre de la tarea">
+                    </div>
+                    <div class="form-group">
+                        <label for="task-category">Categoría:</label>
+                        <select id="task-category" name="category">
+                            <option value="trabajo">Trabajo</option>
+                            <option value="personal">Personal</option>
+                            <option value="estudio">Estudio</option>
+                            <option value="salud">Salud</option>
+                            <option value="hogar">Hogar</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Estado:</label>
+                        <div class="status-options">
+                            <div class="status-option">
+                                <input type="radio" id="status-pending" name="status" value="pending" checked>
+                                <label for="status-pending">Pendiente</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="status-progress" name="status" value="in-progress">
+                                <label for="status-progress">En Progreso</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="task-description">Descripción:</label>
+                    <textarea id="task-description" name="description" placeholder="Describe los detalles de la tarea..."></textarea>
+                </div>
+            </form>
+        </div>
+        
+        <div class="tasks-grid">
+            <div class="task-card pending">
+                <div class="task-header">
+                    <h3 class="task-title">Revisión médica</h3>
+                    <span class="task-status status-pending">Pendiente</span>
+                </div>
+                <div class="task-meta">
+                    <span>Categoría: Salud</span>
+                    <span>Vence: 22/12/2024</span>
+                </div>
+                <div class="task-description">
+                    Agendar y asistir a la revisión médica anual. Llevar exámenes del año anterior.
+                </div>
+                <div class="task-progress">
+                </div>
+                <div class="task-actions">
+                    <div class="task-checkbox">
+                        <input type="checkbox">
+                        <label>Marcar como completada</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="task-card pending">
+                <div class="task-header">
+                    <h3 class="task-title">Trabajo Universidad</h3>
+                    <span class="task-status status-pending">Pendiente</span>
+                </div>
+                <div class="task-meta">
+                    <span>Categoría: Estudio</span>
+                    <span>Vence: 22/12/2024</span>
+                </div>
+                <div class="task-description">
+                    Realizar y entregar proyecto de matemáticas.
+                </div>
+                <div class="task-progress">
+                </div>
+                <div class="task-actions">
+                    <div class="task-checkbox">
+                        <input type="checkbox">
+                        <label>Marcar como completada</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="task-card pending">
+                <div class="task-header">
+                    <h3 class="task-title">Pago Bancario</h3>
+                    <span class="task-status status-pending">Pendiente</span>
+                </div>
+                <div class="task-meta">
+                    <span>Categoría: Personal</span>
+                    <span>Vence: 22/12/2024</span>
+                </div>
+                <div class="task-description">
+                    Pagar trajeta de crédito en el banco.
+                </div>
+                <div class="task-progress">
+                </div>
+                <div class="task-actions">
+                    <div class="task-checkbox">
+                        <input type="checkbox">
+                        <label>Marcar como completada</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="task-card pending">
+                <div class="task-header">
+                    <h3 class="task-title">Pasear Perro</h3>
+                    <span class="task-status status-pending">Pendiente</span>
+                </div>
+                <div class="task-meta">
+                    <span>Categoría: Hogar</span>
+                    <span>Vence: 22/12/2024</span>
+                </div>
+                <div class="task-description">
+                    Llevar al perro al parque.
+                </div>
+                <div class="task-progress">
+                </div>
+                <div class="task-actions">
+                    <div class="task-checkbox">
+                        <input type="checkbox">
+                        <label>Marcar como completada</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
